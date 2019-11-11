@@ -30,6 +30,15 @@ public class CarGpsDataController extends BaseController {
     private CarGpsDataService carGpsDataService;
 
     /**
+     * 跳转到map地图
+     * @return
+     */
+    @RequestMapping(value = "mapView")
+    public String mapView(){
+        return "map";
+    }
+
+    /**
      * 获取指定条数的数据
      * <p>
      * 方法没有使用java8高级特性，显得臃肿
